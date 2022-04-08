@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name = "celery_error_emails",
+    name = "celery-error-emails",
     version = "0.2",
     author = "Michael Herrmann",
     author_email = "michaelREMOVETHISIFYOUAREHUMAN@herrmann.io",
