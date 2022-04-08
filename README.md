@@ -3,7 +3,7 @@
 Automatically send error emails about failing Celery tasks in your Django
 project. Sample email:
 
-Subject: Celery error in your.module.task: name 'typo' is not defined
+#### Celery error in your.module.task: name 'typo' is not defined
 
 ```
 Task your.module.task raised exception:
@@ -13,9 +13,9 @@ NameError("name 'typo' is not defined")
 Task was called with args: [] kwargs: {}.
 
 Traceback (most recent call last):
-  File "/home/project/venv/lib/python3.7/site-packages/celery/app/trace.py", line 412, in trace_task
+  File ".../site-packages/celery/app/trace.py", line 412, in trace_task
     R = retval = fun(*args, **kwargs)
-  File "/home/project/venv/lib/python3.7/site-packages/celery/app/trace.py", line 704, in __protected_call__
+  File ".../site-packages/celery/app/trace.py", line 704, in __protected_call__
     return self.run(*args, **kwargs)
   File "/home/project/main/tasks/_task.py", line 31, in new_func
     result = func(*args, **kwargs)
@@ -48,3 +48,5 @@ above lines:
 ```
 import celery_error_emails
 ```
+
+(Other places may work as well for adding the import.)
