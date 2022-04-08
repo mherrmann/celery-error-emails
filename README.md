@@ -21,12 +21,9 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj.settings')
 app = Celery('proj')
 ```
 
-To enable error emails, you can simply add the following import:
+To enable error emails, you can simply add the following import between the
+above lines:
 
 ```
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj.settings')
-
-import celery_error_emails # <- this is new
-
-app = Celery('proj')
+import celery_error_emails
 ```
