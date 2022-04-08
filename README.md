@@ -3,7 +3,7 @@
 Automatically send error emails about failing Celery tasks in your Django
 project. Sample email:
 
-#### Celery error in your.module.task: name 'typo' is not defined
+Subject: Celery error in your.module.task: name 'typo' is not defined
 
 ```
 Task your.module.task raised exception:
