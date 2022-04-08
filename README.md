@@ -1,4 +1,4 @@
-# celery_error_emails
+# celery-error-emails
 
 Automatically send error emails about failing Celery tasks in your Django
 project.
@@ -6,7 +6,7 @@ project.
 # Installation
 
 ```
-pip install celery_error_emails
+pip install celery-error-emails
 ```
 
 # Usage
