@@ -1,7 +1,7 @@
-# from celery.signals import task_failure
-# from django.core.mail import mail_admins
+from celery.signals import task_failure
+from django.core.mail import mail_admins
 
-# @task_failure.connect()
+@task_failure.connect()
 def celery_task_failure_email(**kwargs):
     subject = "Celery error in {sender.name}: {exception}".format(**kwargs)
     message = """Task {sender.name} raised exception:

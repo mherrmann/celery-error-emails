@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "celery_error_emails",
-    version = "0.1",
+    version = "0.2",
     author = "Michael Herrmann",
     author_email = "michaelREMOVETHISIFYOUAREHUMAN@herrmann.io",
     description = "Automatically send error emails about failing Celery tasks in your Django project.",
