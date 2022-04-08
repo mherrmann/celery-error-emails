@@ -1,9 +1,11 @@
 # celery-error-emails
 
 Automatically send error emails about failing Celery tasks in your Django
-project. Sample email:
+project.
 
-Subject: Celery error in your.module.task: name 'typo' is not defined
+Sample email:
+
+*Subject: Celery error in your.module.task: name 'typo' is not defined*
 
 ```
 Task your.module.task raised exception:
