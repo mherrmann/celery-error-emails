@@ -5,15 +5,9 @@ project.
 
 **Sample email:**
 
-*Subject: Celery error in your.module.task: name 'typo' is not defined*
+*Subject: Celery error in your.module.task*
 
 ```
-Task your.module.task raised exception:
-
-NameError("name 'typo' is not defined")
-
-Task was called with args: [] kwargs: {}.
-
 Traceback (most recent call last):
   File ".../site-packages/celery/app/trace.py", line 412, in trace_task
     R = retval = fun(*args, **kwargs)
@@ -24,6 +18,8 @@ Traceback (most recent call last):
   File "/home/project/main/tasks/__init__.py", line 71, in task
     typo
 NameError: name 'typo' is not defined
+
+Task was called with args: [] kwargs: {}.
 ```
 
 # Installation
